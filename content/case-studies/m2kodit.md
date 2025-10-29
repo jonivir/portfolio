@@ -12,7 +12,7 @@ toc:
 
 ---
 
-# M2-Kodit testi
+# M2-Kodit
 
 ## Usability teting
 
