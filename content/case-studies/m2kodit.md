@@ -6,7 +6,7 @@ author: "Joni"
 tags: 
   - "case-study"
   - "ux-research"
-image: /images/M2Kodit-nosto.png
+image: images/M2Kodit-nosto.png
 description: ""
 toc:
 
