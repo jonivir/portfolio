@@ -1,7 +1,7 @@
 baseURL: "https://hugo-profile.netlify.app"
 languageCode: "en-us"
-title: "Joni Virtanen"
-theme: ["hugo-profile", "hugo-shortcode-gallery"]
+title: "Hugo Profile"
+theme: hugo-profile
 
 outputs:
   home:
@@ -21,7 +21,7 @@ enableRobotsTXT: true
     #shortname: your-disqus-shortname
 
 pagination:
-  pagerSize: 6
+  pagerSize: 3
 
 markup:
   goldmark:
@@ -35,6 +35,11 @@ Menus:
       title: Blog posts
       url: /blogs
       weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -54,8 +59,8 @@ Menus:
     #   weight: 2
 
 params:
-  title: "UX Portfolio"
-  description: UX Portfolio of Joni Virtanen
+  title: "Hugo Profile"
+  description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -108,11 +113,11 @@ params:
   # If you want to customize the menu, you can change it here
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    #brandLogo: "images/logo.png" # Logo for the brand | default is the favicon variable
-    showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Joni Virtanen" # Brand name for the brand | default is the title variable
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
     disableSearch: false
-    searchPlaceholder: "Search"
+    # searchPlaceholder: "Search"
     stickyNavBar:
       enable : true
       showOnScrollUp : true
@@ -129,20 +134,20 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Joni."
-    subtitle: "I design things for the web and all things digital"
-    content: "A UX Designer and researcher who is passionate about user-centric design."
-    #image: /images/hero.svg
+    title: "Isabella."
+    subtitle: "I build things for the web"
+    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
+    image: /images/hero.svg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
-      enable: false
+      enable: true
       name: "Resume"
       url: "#"
       download: true
       newPage: false
-    #socialLinks:
+    socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://example.com
@@ -154,11 +159,13 @@ params:
 
   # About
   about:
-    enable: false
+    enable: true
     title: "About Me"
-    #image: "/images/me.png"
+    image: "/images/me.png"
     content: |-
-        I’m Joni, a UX Designer and researcher who is passionate about user-centric design.
+      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
+
+      I am currently working on a project that will be used to help people find the best way to get around the city.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
@@ -175,15 +182,15 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - company: "Agenda Digital Oy"
-        companyUrl: "https://agendadigital.fi"
+      - company: "Facebook"
+        companyUrl: "https://example.com"
         jobs:
-          - name: "Project manager & designer"
-            date: "Jan 2022 - present"
-            content: "Lead end-to-end execution of web service projects by defining scope, developing project plans, and managing resources. Collaborate with stakeholders and cross-functional teams to ensure timely and quality project delivery."
+          - name: "Senior Software Developer"
+            date: "Jan 2023 - present"
+            content: "I am currently working as a senior software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
             info:
-              content: Working as a Project manager & designer
-            #featuredItems:
+              content: Working as a senior software developer
+            featuredItems:
               fontAwesomeIcons:
                 - icon: fa-brands fa-react
                   url: https://react.dev/
@@ -195,18 +202,61 @@ params:
                 - icon: /fav.png
                   url: "https://example.com"
                   tooltip: Example tooltip content
+          - name: "Software Developer"
+            date: "Jan 2022 - Dec 2023"
+            content: "I worked as a software developer. I worked on a project that will be used to help people find the best way to get around the city."
 
-      - company: "Agenda Helsinki Oy"
-        companyUrl: ""
+      - company: "Amazon"
+        companyUrl: "https://example.com"
         jobs:
-          - name: "Designer"
-            date: "Apr 2019 - Dec 2021"
+          - name: "Software Developer"
+            date: "Sep 2020 - Dec 2021"
             info:
-              content: I worked as a UI/UX designer.
+              content: I worked as a software developer for more than one year in Amazon.
             content: |
-                Lead end-to-end execution of web service projects by defining scope, developing project plans, and managing resources. Collaborate with stakeholders and cross-functional teams to ensure timely and quality project delivery.
+              I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
 
-   
+              - Lead backend developer for a product.
+              - Created a frontend design for a product.
+
+      - company: "Apple"
+        companyUrl: "https://example.com"
+        jobs: 
+        - name: "Junior Software Developer"
+          date: "Jan 2020 - Aug 2020"
+          featuredItems:
+            fontAwesomeIcons:
+              - icon: fa-brands fa-react
+                url: https://react.dev/
+              - icon: fab fa-x-twitter
+                url: https://example.com
+            customIcons:
+              - icon: /fav.png
+                url: "https://example.com"
+          content: |
+            I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+            - Lead backend developer for a product.
+            - Created a frontend design for a product.
+
+      - company: "Netflix"
+        companyUrl: "https://example.com"
+        jobs:
+        - name: "UI/UX Designer"
+          date: "June 2017 - Nov 2019"
+          content: |
+            I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+            - Lead backend developer for a product.
+            - Created a frontend design for a product.
+
+      - company: "Google"
+        companyUrl: "https://example.com"
+        jobs:
+        - name: "Product Designer"
+          date: "Feb 2016 - Mar 2017"
+          content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
   # Education
   education:
     enable: true
@@ -215,32 +265,44 @@ params:
     items:
       - title: "Master of Business Administration"
         school:
-          name: "University of Jyväskylä"
-          url: "https://www.jyu.fi/ops/fi/it/kognitiotieteen-maisteriohjelma"
-        date: "2022 - "
-        #GPA: "3.8 out of 5.0"
+          name: "University of California, Berkeley"
+          url: "https://example.org"
+        date: "2013 - 2015"
+        GPA: "3.8 out of 5.0"
         content: |-
-          Masters Thesis: "Deceptive patterns from the end users perspective"
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+      - title: "Bachelor of Science in Computer Science"
+        school:
+          name: "Massachusetts Institute of Technology"
+          url: "https://example.org"
+        date: "2009 - 2013"
+        GPA: "3.9 out of 5.0"
+        content: |-
+          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+          - Face mask detection using a single convolutional neural network.
+
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
         featuredLink:
           enable: true
-          name: "My Masters Thesis"
-          url: "https://jyx.jyu.fi/jyx/Record/jyx_123456789_102731/Description"
-      - title: "Bachelor of Business Administration"
-        school:
-          name: "Haaga-Helia University of Applied Sciences"
-          url: "https://haaga-helia.fi"
-        date: "2017 - 2019"
-        #GPA: "3.9 out of 5.0"
-        content: |-
-          Specialized in service business and customer relationships.
-        featuredLink:
-          enable: false
           name: "My academic record"
+          url: "https://example.com"
+      - title: "High School"
+        school:
+          name: "Thomas Jefferson High School for Science and Technology."
+          url: "https://example.org"
+        GPA: "4.2 out of 5.0"
+        featuredLink:
+          enable: true
           url: "https://example.com"
 
   # Achievements
   achievements:
-    enable: false
+    enable: true
     # title: "Custom Name"
     items:
       - title: Google kickstart runner
@@ -260,63 +322,61 @@ params:
         content: Contributed to a open source project.
         url: https://example.com
 
-
   # projects
   projects:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Eksote
-        content: The goal of this project was to revamp the Eksote.fi website to improve user experience and address various usability issues.
-        image: images/Eksote-nosto.png
+      - title: Hugo Profile
+        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        image: /images/projects/profile.png
         featured:
-          name: Read more
-          link: /case-studies/eksote/
+          name: Demo
+          link: https://hugo-profile.netlify.app
         badges:
-         - "case-study"
-         - "ui-design"
-         - "ux-design"
-         - "ux-research"
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
+<<<<<<< HEAD
       - title: M2-Kodit
         content: The central objective of this UX research project was to ensure the usability of the M2-Kodit website from the perspectives of both current and potential residents (applicants).
         image: /images/M2kodit-nosto.png
+=======
+      - title: Image Converter
+        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        image: /images/projects/converter.jpg
+>>>>>>> parent of 4aba434 (Content update)
         featured:
-          name: Read more
-          link: /case-studies/m2kodit/
+          name: Demo
+          link: https://django-converter.herokuapp.com
         badges:
-         - "case-study"
-         - "ux-research"
+          - "Django"
+          - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
 
-      - title: Mipro
-        content: The project aimed to modernize and revamp the visual style of an existing website to enhance its overall user experience and align it with current design trends.
-        image: /images/Mipro-nosto.png
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
         featured:
-          name: Read more
-          link: /case-studies/mipro/
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
         badges:
-         - "case-study"
-         - "ui-design"
-
-      - title: Omaolo
-        content: This extensive usability testing initiative encompassed a total of three distinct tests, each conducted at various stages of the service's development. 
-        image: /images/Search.png
-        featured:
-          name: Read more
-          link: /case-studies/omaolo
-        badges:
-         - "case-study"
-         - "ux-research"
-
-      - title: Bioenergia
-        content: The goal of this project was to redesign a web magazine to provide a seamless user experience for readers who can both access free articles and place orders for the magazine. The challenge was to refresh the visual style while adhering to existing graphic guidelines.
-        image: /images/Bioenergia-nosto.png
-        featured:
-          name: Read more
-          link: /case-studies/bioenergia/
-        badges:
-         - "case-study"
-         - "ui-design"
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:
@@ -324,17 +384,27 @@ params:
     # title: "Custom Name"
     content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
     btnName: Mail me
-    btnLink: mailto:jonivirtanen@gmail.com
+    btnLink: mailto:gurusabarisha@gmail.com
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
     #   emailCaption: "Enter your email address"
     #   messageCaption: "Enter your message here"
     #   messageRows: 5
-    
-      
-  footer:
 
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com
+      linkedin: https://linkedin.com
+      twitter: https://twitter.com
+      instagram: https://instagram.com
+      facebook: https://facebook.com
 
   # List pages like blogs and posts
   listPages:
@@ -342,7 +412,7 @@ params:
 
   # Single pages like blog and post
   singlePages:
-    socialShare: false
+    socialShare: true
     readTime:
       enable: true
       content: "min read"
