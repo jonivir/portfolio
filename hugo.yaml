@@ -280,7 +280,7 @@ params:
 
       - title: M2-Kodit
         content: The central objective of this UX research project was to ensure the usability of the M2-Kodit website from the perspectives of both current and potential residents (applicants).
-        image: /images/M2Kodit-nosto.png
+        image: /images/M2kodit-nosto.png
         featured:
           name: Read more
           link: /case-studies/m2kodit/

@@ -6,13 +6,13 @@ author: "Joni"
 tags: 
   - "case-study"
   - "ux-research"
-image: images/M2Kodit-nosto.png
+image: /images/M2kodit-nosto.png
 description: ""
 toc:
 
 ---
 
-# M2-Kodit
+# M2-Kodit testi
 
 ## Usability teting
 
