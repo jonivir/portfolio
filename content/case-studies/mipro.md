@@ -56,14 +56,3 @@ The project aimed to modernize and revamp the visual style of an existing websit
 *4 Enhanced Content Presentation:*
 : Improved content layout and imagery to make information more engaging and digestible.
 
-{{<gallery
-    globalMatch="images/mipro/*"
-    sortOrder="asc"
-    rowHeight="150"
-    margins="5"
-    thumbnailResizeOptions="600x600 q90 Lanczos"
-    showExif=true
-    previewType="blur"
-    embedPreview=true
-    loadJQuery=true
->}}

@@ -61,14 +61,3 @@ The goal of this project was to redesign a web magazine to provide a seamless us
 
 *3. Responsive Design*
 : Ensured that the website was fully responsive for seamless access on various devices.
-{{<gallery
-    globalMatch="images/bioenergia/*"
-    sortOrder="asc"
-    rowHeight="150"
-    margins="5"
-    thumbnailResizeOptions="600x600 q90 Lanczos"
-    showExif=true
-    previewType="blur"
-    embedPreview=true
-    loadJQuery=true
->}}
